@@ -5,10 +5,11 @@ test = new Client('consume', 'amqp://localhost');
 test
   .consume(
     'hello',
-    function(msg) {
+    function(msg, ch) {
       console.log(msg.content.toString());
+      return ch.ack(msg);
     },
-    { noAck: true }
+    { noAck: false, prefetch: 1}
   )
   .catch(err => {
     console.log(err.message);
