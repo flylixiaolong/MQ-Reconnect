@@ -6,7 +6,7 @@ var i = 1;
 
 function send(i) {
   test
-    .publish('hello', 'one', i, 'topic')
+    .send('hello', i)
     .then(info => {
       console.log(i, 'ok');
     })
