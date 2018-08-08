@@ -1,17 +1,17 @@
-var Create = require('../lib');
+var Client = require('../lib');
 
-test = Create('amqp://localhost');
+test = Client('product', 'amqp://localhost');
 
 var i = 1;
 
 function send(i) {
   test
-    .PublicMsg('hello', 'one', i)
+    .public('hello', 'one', i)
     .then(info => {
       console.log(i, 'ok');
     })
     .catch(err => {
-      console.log(i, 'no', err.message);
+      console.log(i, 'no');
     });
 }
 

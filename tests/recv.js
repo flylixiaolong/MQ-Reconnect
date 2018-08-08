@@ -1,9 +1,9 @@
-var Create = require('../lib');
+var Client = require('../lib');
 
-test = Create('amqp://localhost');
+test = new Client('consume', 'amqp://localhost');
 
 test
-  .Consumer(
+  .consume(
     'hello',
     function(msg) {
       console.log(msg.content.toString());
@@ -15,7 +15,7 @@ test
   });
 
 test
-  .Consumer(
+  .consume(
     'hell',
     function(msg) {
       console.log(msg.content.toString());
