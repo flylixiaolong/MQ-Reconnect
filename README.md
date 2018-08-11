@@ -68,7 +68,7 @@ Client.close()
    ```javascript
    client
        .consume('queue_name', function handle(msg, ch) {
-         console.log(msg.content.toString());
+            console.log(msg.content.toString());
             return ch.ack(msg);
          },
          { noAck: false, prefetch: 1}
