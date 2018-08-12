@@ -1,16 +1,15 @@
 {
   "name": "mq-reconnect",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.6.0",
+  "description": "simple wrapper for amqplib",
   "main": "index.js",
   "scripts": {
     "test": "mocha"
   },
-  "author": "",
+  "author": "Xiaolong Li[fly_lxl@foxmail.com]",
   "license": "ISC",
   "dependencies": {
-    "amqplib": "^0.5.2",
-    "bluebird": "^3.5.1"
+    "amqplib": "^0.5.2
   },
   "devDependencies": {
     "mocha": "^5.2.0"
