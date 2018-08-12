@@ -2,6 +2,7 @@
   "name": "mq-reconnect",
   "version": "0.6.0",
   "description": "simple wrapper for amqplib",
+  "license": "MIT",
   "main": "index.js",
   "scripts": {
     "test": "mocha"
@@ -13,5 +14,14 @@
   },
   "devDependencies": {
     "mocha": "^5.2.0"
-  }
+  },
+  "repository": {
+"    type": "git",
+"    url": "git+https://github.com/flylixiaolong/MQ-Reconnect.git"
+  },
+  "keywords": [
+    "rabbitmq",
+    "reconnect"
+  ],
+  "homepage": "https://github.com/flylixiaolong/MQ-Reconnect#readme"
 }
