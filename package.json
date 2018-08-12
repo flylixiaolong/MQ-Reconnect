@@ -8,7 +8,6 @@
     "test": "mocha"
   },
   "author": "Xiaolong Li[fly_lxl@foxmail.com]",
-  "license": "ISC",
   "dependencies": {
     "amqplib": "^0.5.2"
   },
