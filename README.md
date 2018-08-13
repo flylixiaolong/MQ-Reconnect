@@ -2,6 +2,9 @@
 
 This package is one simple wrapper for [amqplib](http://www.squaremobius.net/amqp.node/).
 
+    npm install mq-reconnect
+
+
 ### Document
 
 MQ-Reconnect is the wrapper for amqplib. It makes send or publish message simple, and using persistent connection, suporting  reconnect to server when connection closed.
